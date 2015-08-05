@@ -2,10 +2,7 @@
   "name": "nodeserv",
   "version": "1.0.0",
   "description": "A simple node server",
-  "main": "server.js",
-  "scripts": {
-    "test": "test"
-  },
+  "main": "app/js/server.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jjoyave1/nodeserv.git"
