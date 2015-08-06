@@ -20,7 +20,12 @@ var port = process.env.PORT || 8080; // SET PORT (changeable)
 var router = express.Router(); // get instance of express Router
 
 router.get('/', function ( req, res ) {
-  res.json({ message: 'WELCOME TO THE API' });
+  res.json({
+    station_name : "gas station goes here",
+    location : "location goes here",
+    receipt_date : "date goes here",
+    spent : "price goes here"
+  });
 });
 
 // add in routes here
