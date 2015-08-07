@@ -4,6 +4,12 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var Parse = require('parse').Parse;
+// var keys = require('../js/keys.js');
+var js_key = "PrjISzjQy3yGUors8xyCF5vHZTsba4wNCzf8YUQe";
+
+// initialize parse server
+Parse.initialize("nodeserv", js_key);
 
 // bodyParser() configuration
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,7 +32,9 @@ router.get('/', function ( req, res ) {
     receipt_date : "date goes here",
     spent : "price goes here"
   });
+
 });
+console.log(keys);
 
 // add in routes here
 
